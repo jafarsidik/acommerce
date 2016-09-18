@@ -7,4 +7,6 @@ This repository is for a test made by Acommerce Indonesia. In this repository, I
 This repository using Laravel PHP Framework, to deploy this application you can use 2 methods:
 
 1. Using [Homestead](https://laravel.com/docs/5.3/homestead) application
-2. Using Virtual Host in your favorite local server software: [XAMPP](https://www.apachefriends.org/index.html), [WAMP](http://www.wampserver.com/en/) 
+2. Using Virtual Host in your favorite local server software: [XAMPP](https://www.apachefriends.org/index.html), [WAMP](http://www.wampserver.com/en/)
+
+Notes: Before deploying this application, you have to run 'composer install' or 'composer update' to have vendor folder on your application
