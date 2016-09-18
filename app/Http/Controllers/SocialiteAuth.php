@@ -64,7 +64,7 @@ class SocialiteAuth extends Controller
      */
     public function googleRedirectToProvider()
     {
-        return Socialite::driver('google')->redirect();
+        return Socialite::driver('google')->scopes(['https://www.googleapis.com/auth/plus.me', 'https://www.googleapis.com/auth/plus.stream.write'])->redirect();
     }
 
     /**
@@ -77,6 +77,7 @@ class SocialiteAuth extends Controller
         $user = Socialite::driver('google')->user();
 
         $token = $request->session()->put('access_token',$user->token);
+        $userId = $request->session()->put('userId',$user->id);
         $request->session()->flash('selesai','Anda sudah terhubung dengan Facebook');
         return redirect('googleplus');
     }
