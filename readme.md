@@ -9,6 +9,11 @@ This repository using Laravel PHP Framework, to deploy this application you can 
 1. Using [Homestead](https://laravel.com/docs/5.3/homestead) application [Recommended]
 2. Using Virtual Host in your favorite local server software: [XAMPP](https://www.apachefriends.org/index.html), [WAMP](http://www.wampserver.com/en/)
 
+Update:
+To deploy this application you can do these:
+1. Clone this git into your respective host folder (it depends on your software).
+2. After cloning, you have to make either virtual host or if you run on vagrant you can vagrant up command to make it run.
+
 Notes:
 1. Before deploying this application, you have to run `composer install` or `composer update` to have vendor folder on your application
 2. Give the url name for your application acommerce.dev.
